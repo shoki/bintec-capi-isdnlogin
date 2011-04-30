@@ -1,0 +1,22 @@
+UNIX ISDNLogin Client for BinTec Remote CAPI
+============================================
+
+On BinTec ISDN routers there is a isdnlogin command to either log into remote 
+routers over an ISDN line or to just test ISDN connectivity with several 
+bearers or services. If you don't have a BinTec ISDN router this tool has no
+for you. :)
+
+This tool aims to do the same using the freely available BinTec UNIX Remote 
+CAPI library on a UNIX box.
+
+Make sure to adjust the Makefile to point to the directory where you compiled 
+the CAPI library because we link it statically into the binary. It should be 
+at least version 1.7.
+
+Also don't forget to set the apropriate environment vars required by the CAPI 
+lib.
+
+When typing ~. while connected you can quit the current connection if the 
+remote side is no longer responding.
+
+Andre Pascha
